@@ -1,0 +1,276 @@
+@import 'src/styles/variables';
+
+.myRecordContainer {
+  margin-top: 18rem;
+  width: 100%;
+  & p {
+    font-size: 3rem;
+    font-style: normal;
+  }
+
+  .recordItem {
+    background-color: $primary-300;
+    overflow: hidden;
+    width: 31%;
+    z-index: 1;
+
+    .containerRecordItem {
+      position: relative;
+      width: calc(100% - 9rem);
+      height: calc(100% - 9rem);
+
+      & .imgRecordItem {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        opacity: 0.4;
+        z-index: 1;
+      }
+
+      & .shadowBox {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: $dark-600;
+        opacity: 0.7;
+        z-index: 5;
+      }
+
+      & .aboutRecord {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        z-index: 10;
+
+        .titleRecord {
+          font-size: 4rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 550;
+          letter-spacing: 0.2rem;
+          color: $primary-300;
+        }
+        .descriptionRecord {
+          background-color: $primary-400;
+          font-size: 2.5rem;
+          padding: 1.3rem 2.4rem;
+          text-align: center;
+          color: $light;
+        }
+      }
+    }
+  }
+
+  .flexBetween {
+    justify-content: space-between !important;
+  }
+
+  .exercise {
+    width: 90%;
+  }
+
+  .notateItemExercise {
+    font-size: 10rem;
+    color: $light;
+    margin-top: -1rem;
+  }
+
+  .marginTop10 {
+    margin-top: 10rem;
+  }
+
+  .recordDate {
+    position: relative;
+    width: 50% !important;
+    aspect-ratio: 1 / 0.6;
+    overflow: hidden;
+
+    & .imgRecordDate {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+    }
+
+    & svg {
+      width: 65%;
+      height: 65%;
+    }
+
+    & div {
+      width: 100% !important;
+      height: 100% !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: unset !important;
+    }
+
+    .recordDateInfo {
+      display: flex;
+      justify-content: center;
+
+      & p {
+        font-size: 2.8rem;
+        font-style: initial;
+        color: $light;
+      }
+
+      & p:last-of-type {
+        margin-left: 1.5rem;
+        font-size: 4rem;
+        font-style: normal;
+      }
+    }
+  }
+
+  .containerMenuItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 0 8rem 0;
+  }
+
+  .flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapFlex {
+    flex-wrap: wrap;
+  }
+
+  .containerExercises {
+    height: 30rem;
+    max-height: 31rem;
+    overflow-y: scroll;
+  }
+
+  .exerciseInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $light;
+  }
+
+  .timeDo {
+    font-size: 3rem;
+    color: $primary-300;
+    margin-top: -3rem;
+  }
+
+  .bodyRecord {
+    box-sizing: border-box;
+    padding: 5rem 2rem 5rem 2rem;
+    background-color: $dark-600;
+  }
+
+  .flexStart {
+    justify-content: flex-start;
+  }
+
+  .titleDiary {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .containerDiary {
+    border: 1px solid $dark-600;
+    & p {
+      color: $dark-600;
+      font-size: 2.5rem;
+      font-style: normal;
+    }
+  }
+
+  .dateRecord {
+    font-size: 4rem;
+    font-style: normal;
+    color: $light;
+  }
+
+  .fontSize29 {
+    font-size: 2.9rem;
+  }
+
+  .blackBackground {
+    background-color: $dark-600;
+  }
+
+  .colorEnergy {
+    color: $primary-300;
+  }
+
+  .filterContainer {
+    justify-content: space-between;
+    padding-left: 4rem;
+    margin-top: 3rem;
+
+    .btnFilterDurable {
+      padding: 2rem 5.2rem;
+      border-radius: 2rem;
+      background-color: $light;
+      font-size: 2.5rem;
+      color: $primary-300;
+      cursor: pointer;
+    }
+
+    .activeFilter {
+      background-color: $primary-300;
+      color: $light;
+    }
+  }
+
+  .graph {
+    position: relative;
+    width: 100%;
+    background-color: $dark-600;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    overflow: hidden;
+
+    & canvas {
+      width: 92% !important;
+      height: 98% !important;
+    }
+  }
+
+  .recordMyDiary {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+
+    .recordMenuDate {
+      width: 100%;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+
+  .padding5 {
+    padding: 5rem;
+  }
+
+  .loadMoreRecordBtn {
+    color: $light;
+    width: 100%;
+    aspect-ratio: 1 / 0.17;
+    font-size: 2.5rem;
+    font-style: normal;
+    background: $primary-300-400;
+    border: none;
+    border-radius: 0.6rem;
+  }
+}
+
+.circleElement {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}

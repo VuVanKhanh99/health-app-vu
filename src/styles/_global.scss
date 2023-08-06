@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+@import 'src/styles/variables';
+
+html {
+  font-size: 5px;
+  line-height: 1.4rem;
+  box-sizing: border-box;
+  overscroll-behavior: none;
+  font-style: normal;
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: transparent;
+
+  & > div{
+    height: 100%;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0.9rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 0.9rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

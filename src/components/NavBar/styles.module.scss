@@ -1,0 +1,96 @@
+@import 'src/styles/variables';
+
+.header {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  height: 18rem;
+  min-height: 15rem;
+  background-color: $dark-600;
+
+  & * {
+    background-color: inherit;
+  }
+
+  & > div {
+    width: 100%;
+  }
+}
+
+.navbarContainer {
+  width: 100%;
+  text-decoration: none;
+  font-style: normal;
+  color: $dark-600;
+  & ul {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-basis: initial;
+    background-color: inherit;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .flexWidth30percent {
+      width: 30%;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .flexWidth70percent {
+      width: 70%;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .appIcon {
+      display: flex;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 27rem;
+      height: 13rem;
+      max-width: 35rem;
+      max-height: 18rem;
+    }
+
+    .subItemNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      & .nameMenuItem {
+        font-size: 2.5rem;
+        text-transform: none;
+        vertical-align: baseline;
+        font-style: normal;
+        text-decoration: none;
+      }
+    }
+
+    .iconItem {
+      width: 6rem;
+      height: 6rem;
+      max-width: 12.35rem;
+      max-height: 12.35rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+    }
+
+    .activeItem {
+      color: $light;
+    }
+
+    .nonActiveItem {
+      color: $primary-400;
+    }
+  }
+}

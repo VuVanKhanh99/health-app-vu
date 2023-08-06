@@ -1,0 +1,14 @@
+$light: #ffffff;
+$dark-600: #2e2e2e;
+$primary-300: #ffcc21;
+$dark-500: #414141;
+$primary-400: #ff963c;
+$primary-500: #ea6c00;
+$gray-400: #777777;
+$secondary-300: #8fe9d0;
+$primary-300-400: linear-gradient(180deg, #ff963c 0%, #ffcc21 100%);
+
+:export {
+  lightColor: $light;
+  dark600Color: $dark-600;
+}
