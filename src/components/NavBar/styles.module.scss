@@ -25,24 +25,26 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  background-image: linear-gradient(#444, #111);
   min-width: 50rem;
+  background-color: $gray-400;
   min-height: 30rem;
   z-index: 99;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
 
-  & > div {
+  & a {
+    text-decoration: none;
+  }
+
+  & div {
     display: block;
     font-size: 3rem;
-    padding: 7rem 6.5rem;
+    padding: 5rem 6.5rem;
     text-align: left;
     font-style: normal;
     color: $light;
-    box-shadow: 2px 0 0 black;
-
-    // &:not(:last-of-type) {
-    //   border-bottom: 1px solid $dark-600;
-    // }
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-transform: none;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
@@ -99,6 +101,11 @@
         vertical-align: baseline;
         font-style: normal;
         text-decoration: none;
+
+        &:active {
+          text-decoration: none;
+          font-style: normal;
+        }
       }
     }
 
@@ -121,4 +128,3 @@
     }
   }
 }
-

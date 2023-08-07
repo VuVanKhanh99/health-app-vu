@@ -65,14 +65,8 @@
     margin: 0;
   }
 
-  .marginBottom3 {
+  .marginBottom02 {
     margin-bottom: 0.2rem;
-  }
-
-  .notateItemExercise {
-    font-size: 10rem;
-    color: $light;
-    margin-top: -1rem;
   }
 
   .marginTop10 {
@@ -81,51 +75,6 @@
 
   .marginBottom10 {
     margin-bottom: 10rem;
-  }
-
-  .recordDate {
-    position: relative;
-    width: 50% !important;
-    aspect-ratio: 1 / 0.6;
-    overflow: hidden;
-
-    & .imgRecordDate {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      object-fit: cover;
-    }
-
-    & svg {
-      width: 65%;
-      height: 65%;
-    }
-
-    & div {
-      width: 100% !important;
-      height: 100% !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: unset !important;
-    }
-
-    .recordDateInfo {
-      display: flex;
-      justify-content: center;
-
-      & p {
-        font-size: 2.8rem;
-        font-style: initial;
-        color: $light;
-      }
-
-      & p:last-of-type {
-        margin-left: 1.5rem;
-        font-size: 4rem;
-        font-style: normal;
-      }
-    }
   }
 
   .containerMenuItem {
@@ -145,41 +94,8 @@
     flex-direction: column;
   }
 
-  .wrapFlex {
-    flex-wrap: wrap;
-  }
-
-  .containerExercises {
-    height: 30rem;
-    max-height: 31rem;
-    overflow-y: scroll;
-  }
-
-  .exerciseInfo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid $light;
-  }
-
-  .timeDo {
-    font-size: 3rem;
-    color: $primary-300;
-    margin-top: -3rem;
-  }
-
-  .bodyRecord {
-    box-sizing: border-box;
-    padding: 5rem 2rem 5rem 2rem;
-    background-color: $dark-600;
-  }
-
   .flexStart {
     justify-content: flex-start;
-  }
-
-  .lineHeight3 {
-    line-height: 3rem;
   }
 
   .containerRecommended {
@@ -216,63 +132,6 @@
         line-height: 1.5rem;
         color: $primary-400;
       }
-    }
-  }
-
-  .dateRecord {
-    font-size: 4rem;
-    font-style: normal;
-    color: $light;
-  }
-
-  .fontSize29 {
-    font-size: 2.9rem !important;
-  }
-
-  .fontSize31 {
-    font-size: 3.1rem !important;
-  }
-
-  .blackBackground {
-    background-color: $dark-600;
-  }
-
-  .colorEnergy {
-    color: $primary-300;
-  }
-
-  .filterContainer {
-    justify-content: space-between;
-    padding-left: 4rem;
-    margin-top: 3rem;
-
-    .btnFilterDurable {
-      padding: 2rem 5.2rem;
-      border-radius: 2rem;
-      background-color: $light;
-      font-size: 2.5rem;
-      color: $primary-300;
-      cursor: pointer;
-    }
-
-    .activeFilter {
-      background-color: $primary-300;
-      color: $light;
-    }
-  }
-
-  .graph {
-    position: relative;
-    width: 100%;
-    background-color: $dark-600;
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: pointer;
-    overflow: hidden;
-
-    & canvas {
-      width: 92% !important;
-      height: 98% !important;
     }
   }
 

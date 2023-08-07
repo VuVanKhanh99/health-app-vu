@@ -10,13 +10,14 @@ import RecommendedIcon7 from '../../assets/images/RecommendedIcon7.jpg'
 import RecommendedIcon8 from '../../assets/images/RecommendedIcon8.jpg'
 import clsx from 'clsx'
 import styles from './styles.module.scss'
+import ScrollToTopButton from '../../components/ScrollToTopButton'
 
 const dataRecommendedColumnItems = [
   {
     key: 1,
     title: (
       <div className={clsx(styles.flexCenter, styles.directionColumn, styles.flexStart)}>
-        <p className={clsx(styles.titleRecommended, styles.marginBottom3)}>Recommended</p>
+        <p className={clsx(styles.titleRecommended, styles.marginBottom02)}>Recommended</p>
         <p className={clsx(styles.titleRecommended)}>Column</p>
         <p className={styles.underlineRecommended} />
       </div>
@@ -27,7 +28,7 @@ const dataRecommendedColumnItems = [
     key: 2,
     title: (
       <div className={clsx(styles.flexCenter, styles.directionColumn, styles.flexStart)}>
-        <p className={clsx(styles.titleRecommended, styles.marginBottom3)}>Recommended</p>
+        <p className={clsx(styles.titleRecommended, styles.marginBottom02)}>Recommended</p>
         <p className={clsx(styles.titleRecommended)}>Diet</p>
         <p className={styles.underlineRecommended} />
       </div>
@@ -38,7 +39,7 @@ const dataRecommendedColumnItems = [
     key: 3,
     title: (
       <div className={clsx(styles.flexCenter, styles.directionColumn, styles.flexStart)}>
-        <p className={clsx(styles.titleRecommended, styles.marginBottom3)}>Recommended</p>
+        <p className={clsx(styles.titleRecommended, styles.marginBottom02)}>Recommended</p>
         <p className={clsx(styles.titleRecommended)}>Beauty</p>
         <p className={styles.underlineRecommended} />
       </div>
@@ -49,7 +50,7 @@ const dataRecommendedColumnItems = [
     key: 4,
     title: (
       <div className={clsx(styles.flexCenter, styles.directionColumn, styles.flexStart)}>
-        <p className={clsx(styles.titleRecommended, styles.marginBottom3)}>Recommended</p>
+        <p className={clsx(styles.titleRecommended, styles.marginBottom02)}>Recommended</p>
         <p className={clsx(styles.titleRecommended)}>Health</p>
         <p className={styles.underlineRecommended} />
       </div>
@@ -160,6 +161,7 @@ function ColumnPage() {
           </div>
         </Grid>
       </Grid>
+      <ScrollToTopButton />
     </div>
   )
 }

@@ -1,0 +1,30 @@
+@import 'src/styles/variables';
+
+.containerNotFound {
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  color: $dark-600;
+  font-size: 4rem;
+  font-style: normal;
+
+  & .notFound {
+    font-weight: 450;
+  }
+
+  & .backToHome {
+    text-decoration: underline;
+    color: $primary-300;
+    cursor: pointer;
+  }
+
+  .directionColumn {
+    flex-direction: column;
+  }
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

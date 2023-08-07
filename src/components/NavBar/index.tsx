@@ -23,14 +23,14 @@ function NavBar() {
         <nav className={styles.navbarContainer}>
           <ul>
             <li title="Home" className={styles.flexWidth30percent}>
-              <Link to="/">
+              <Link to="/home">
                 <div className={styles.appIcon}>
                   <AppIcon />
                 </div>
               </Link>
             </li>
             <li>
-              <Link to="/main-page">
+              <Link to="/home">
                 <div className={styles.subItemNavbar}>
                   <div className={styles.iconItem}>
                     <MainPageIcon />
@@ -47,19 +47,21 @@ function NavBar() {
               </Link>
             </li>
             <li>
-              <div className={styles.subItemNavbar}>
-                <div className={styles.iconItem}>
-                  <ChallengeIcon />
+              <Link to="/challenge-record">
+                <div className={styles.subItemNavbar}>
+                  <div className={styles.iconItem}>
+                    <ChallengeIcon />
+                  </div>
+                  <p
+                    className={clsx(
+                      styles.nameMenuItem,
+                      currentRoute.includes('/main-page') ? styles.activeItem : styles.nonActiveItem
+                    )}
+                  >
+                    チャレンジ
+                  </p>
                 </div>
-                <p
-                  className={clsx(
-                    styles.nameMenuItem,
-                    currentRoute.includes('/main-page') ? styles.activeItem : styles.nonActiveItem
-                  )}
-                >
-                  チャレンジ
-                </p>
-              </div>
+              </Link>
             </li>
             <li>
               <div className={styles.subItemNavbar}>
@@ -106,47 +108,17 @@ function NavBar() {
         }}
       >
         <Grid className={styles.containerMenu} xs={8} sm={5}>
-          <div style={{ boxShadow: '1px 0 0 #444' }}>
+          <Link to="/home">
             <div>自分の記録</div>
-          </div>
+          </Link>
           <div>体重グラフ</div>
           <div>目標</div>
           <div>選択中のコース</div>
-          <div>コラム一覧</div>
+          <Link to="/column-page">
+            <div>コラム一覧</div>
+          </Link>
           <div>設定</div>
         </Grid>
-
-        <ul id="menu">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Categories</a>
-            <ul>
-              <li>
-                <a href="#">CSS</a>
-              </li>
-              <li>
-                <a href="#">Graphic design</a>
-              </li>
-              <li>
-                <a href="#">Development tools</a>
-              </li>
-              <li>
-                <a href="#">Web design</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Work</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
       </Popover>
     </Grid>
   )

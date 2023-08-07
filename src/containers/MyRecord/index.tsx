@@ -262,6 +262,7 @@ function Home() {
           </div>
         </Grid>
       </Grid>
+      <ScrollToTopButton />
     </div>
   )
 }
