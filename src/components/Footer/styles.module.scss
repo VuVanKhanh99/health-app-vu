@@ -1,0 +1,34 @@
+@import 'src/styles/variables';
+
+.footer {
+  display: block;
+  background-color: $dark-600;
+
+  .containerFooter {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: auto;
+    padding: 8rem 2rem;
+  }
+
+  .spacingBetweenItems {
+    width: 14rem;
+  }
+
+  p {
+    font-size: 3rem;
+    color: $light;
+    word-break: keep-all;
+    letter-spacing: 0.3rem;
+    font-style: normal;
+    cursor: pointer;
+  }
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

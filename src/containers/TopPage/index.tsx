@@ -163,7 +163,7 @@ function Home() {
         </Grid>
       </Grid>
       <Grid xs={12} className={styles.flexCenter}>
-        <Grid xs={6} sm={3} className={styles.marginTop3}>
+        <Grid xs={6} sm={3} className={clsx(styles.marginTop10, styles.marginBottom10)}>
           <div className={clsx(styles.loadMoreRecordBtn, styles.flexCenter)}>記録をもっと見る</div>
         </Grid>
       </Grid>

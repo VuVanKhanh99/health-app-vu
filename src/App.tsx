@@ -3,8 +3,9 @@ import NavBar from './components/NavBar'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import LazyLoadElement from './components/LazyLoadElement'
 import styles from './styles.module.scss'
+import Footer from './components/Footer'
 
-const LazyTopPage = lazy(() => import('./containers/MyRecord'))
+const LazyTopPage = lazy(() => import('./containers/TopPage'))
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LazyLoadElement element={<LazyTopPage />} />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )

@@ -183,7 +183,6 @@ function Home() {
           </Grid>
         </Grid>
       </Grid>
-
       <Grid className={styles.flexCenter} xs={12}>
         <Grid xs={11} sm={10} className={clsx(styles.bodyRecord, styles.marginTop10)}>
           <Grid
@@ -229,20 +228,38 @@ function Home() {
           </Grid>
         </Grid>
       </Grid>
-
       <Grid xs={12} className={styles.flexCenter}>
-        <Grid xs={11} sm={10} className={clsx(styles.marginTop10)}>
+        <Grid xs={11} sm={10} className={styles.marginTop10}>
           <h2 className={styles.titleDiary}>My Diary</h2>
           <Grid className={styles.recordMyDiary}>
-            <div className={clsx(styles.containerDiary, styles.circleElement)}>
-              <div className={clsx(styles.flexCenter, styles.flexStart)}>
-                <div>
-                  <p className={clsx(styles.dateRecord, styles.fontSize29)}>2021.05.21</p>
-                  <p className={clsx(styles.dateRecord, styles.fontSize29)}>23:25</p>
+            {Array.from({ length: 8 }).map((v, i) => (
+              <div className={clsx(styles.containerDiary, styles.circleElement)} key={i}>
+                <div className={clsx(styles.flexCenter, styles.flexStart)}>
+                  <div>
+                    <p className={clsx(styles.dateRecord, styles.titleDiary)}>2021.05.21</p>
+                    <p className={clsx(styles.dateRecord, styles.titleDiary)}>23:25</p>
+                  </div>
                 </div>
+                <div className={styles.titleDiary}>
+                  <p>私の日記の記録が一部表示されます｡</p>
+                </div>
+                <p className={styles.lineHeight3}>
+                  テキストテキストテキストテキスト
+                  テキストテキストテキストテキスト
+                  テキストテキストテキストテキスト 
+                  テキストテキストテキストテキスト
+                  テキストテキスト...
+                </p>
               </div>
-            </div>
+            ))}
           </Grid>
+        </Grid>
+      </Grid>
+      <Grid xs={12} className={styles.flexCenter}>
+        <Grid xs={6} sm={3} className={clsx(styles.marginTop10, styles.marginBottom10)}>
+          <div className={clsx(styles.loadMoreRecordBtn, styles.flexCenter)}>
+            自分の日記をもっと見る
+          </div>
         </Grid>
       </Grid>
     </div>

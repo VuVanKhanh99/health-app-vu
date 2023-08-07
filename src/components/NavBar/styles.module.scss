@@ -21,6 +21,31 @@
   }
 }
 
+.containerMenu {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-image: linear-gradient(#444, #111);
+  min-width: 50rem;
+  min-height: 30rem;
+  z-index: 99;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
+
+  & > div {
+    display: block;
+    font-size: 3rem;
+    padding: 7rem 6.5rem;
+    text-align: left;
+    font-style: normal;
+    color: $light;
+    box-shadow: 2px 0 0 black;
+
+    // &:not(:last-of-type) {
+    //   border-bottom: 1px solid $dark-600;
+    // }
+  }
+}
+
 .navbarContainer {
   width: 100%;
   text-decoration: none;
@@ -59,12 +84,14 @@
       height: 13rem;
       max-width: 35rem;
       max-height: 18rem;
+      cursor: pointer;
     }
 
     .subItemNavbar {
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      cursor: pointer;
 
       & .nameMenuItem {
         font-size: 2.5rem;
@@ -94,3 +121,4 @@
     }
   }
 }
+

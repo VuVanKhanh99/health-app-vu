@@ -102,10 +102,14 @@
     }
   }
 
-  .marginTop3 {
-    margin-top: 3rem;
+  .marginTop10 {
+    margin-top: 10rem;
   }
 
+  .marginBottom10 {
+    margin-bottom: 10rem;
+  }
+  
   .loadMoreRecordBtn {
     color: $light;
     width: 100%;
@@ -115,5 +119,6 @@
     background: $primary-300-400;
     border: none;
     border-radius: 0.6rem;
+    cursor: pointer;
   }
 }

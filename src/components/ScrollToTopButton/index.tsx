@@ -22,15 +22,18 @@ const ScrollToTopButton = () => {
   }
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     window.addEventListener('scroll', toggleVisible)
     return () => window.addEventListener('scroll', toggleVisible)
   }, [])
 
   return (
     <>
-      <div className={styles.button} onClick={scrollToTop}>
-        {visible && <ScrollToTop />}
-      </div>
+      {visible && (
+        <div className={styles.button} onClick={scrollToTop}>
+          <ScrollToTop />
+        </div>
+      )}
     </>
   )
 }
